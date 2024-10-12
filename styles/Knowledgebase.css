@@ -1,0 +1,96 @@
+
+/* Flex-based Layout for Grid Container */
+.grid-container {
+    padding: 15px;
+    display: flex; /* Use Flexbox to align items horizontally */
+    justify-content: space-between; /* Evenly distribute space between divs */
+    gap: 10px; /* Optional: Adds space between items */
+}
+
+/* Individual Grid Item Styles */
+.grid-item {
+    padding: 5px; /* Padding inside each grid item */
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners for a smoother look */
+    border-color: black;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Width Proportions for Each Div */
+.grid-item:nth-child(1) {
+    flex: 0.25; /* 25% of the available width */
+}
+
+.grid-item:nth-child(2) {
+    flex: 0.25; /* 25% of the available width */
+}
+
+.grid-item:nth-child(3) {
+    flex: 0.15; /* 20% of the available width */
+}
+
+.grid-item:nth-child(4) {
+    flex: 0.35; /* 40% of the available width */
+}
+
+/* Headings Style */
+h5 {
+    
+    color: #333; /* Dark color for headings */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+/* Additional Styling for Interactive Elements */
+.grid-item:hover {
+    background-color: #f0f0f0; /* Slight background change on hover */
+    cursor: pointer; /* Pointer cursor to indicate interactivity */
+}
+.headsection{
+    margin-left: 15px;
+    display: flex; /* Use Flexbox to align items horizontally */
+    margin-top: 0px;
+}
+.header_p{
+    font-size: 25px;
+    color:blue;
+    margin-bottom: 3px;
+    margin-right: 95px;
+}
+.search-box2 {
+    position: relative;
+    margin-top: 35px;
+
+}
+
+
+.search-icon2 {
+    top: 5px;
+    left: 8px;
+    position: absolute;
+}
+
+.search2 {
+    border-width: 1px;
+    border-radius: 48px;
+    height: 20px;
+    padding-left: 25px;
+    width: 280px;
+}
+.nested-container {
+    display: flex; /* Flex layout for nested rows */
+    flex-direction: column; /* Align rows vertically */
+    gap: 10px; /* Space between nested rows */
+}
+
+.nested-row {
+    background-color: #f0f0f0; /* Light gray background */
+    padding-left: 10px; /* Padding inside each row */
+    border-radius: 5px; /* Rounded corners */
+    text-align: left; /* Align text to the left */
+    border: #333;
+    display: flex;
+    gap: 10px;
+}
+.nested-row:hover{
+    background-color: #e1d5d5;
+}

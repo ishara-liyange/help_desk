@@ -1,0 +1,544 @@
+body {
+    background-image: url("D:/SLIIT/Y1S2/IWT/Assignment try 01/img/backgroundimagehome.jpg.png");
+    margin: 0px;
+}
+
+header{
+    width: auto;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.815);
+}
+.logo {
+    /*background-color: rgb(151, 168, 72);*/
+    height: 100px;
+    width: 30%;
+    float: left;
+    display: flex;
+    justify-content: inherit;
+    align-items: center;
+}
+#logo1{
+    float: left;
+    width: 90px;
+}
+#PLARD{
+   font-size: x-large;
+   font-weight: 1000;
+   font-family: Arial, Helvetica, sans-serif;
+}
+#button1 {
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+    background: none;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+#button1:hover {
+    color: white;
+    background: rgb(41, 80, 209);
+}
+.nav{
+    float: left;    
+    height: 100px;
+    width: 40%;
+    /*background-color: aquamarine;*/
+}
+.nav ul{
+    max-height: 100%;
+    padding: 11px;
+    list-style-type: none;
+    display: flex;
+	margin: 0;
+	overflow: hidden;
+	/*background-color: #333;*/
+    justify-content: space-between;
+    align-items: center;
+}
+.nav ul li{
+    display: flex;
+}
+
+.nav ul li a{
+    display: flex;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.nav ul li a:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 40px;
+    transition: 1s;
+    font-size: 120%;
+}
+.search{
+    float: left;
+    background-color: none;
+    height: 100px;
+    width: 30%;
+    position: relative;
+    align-items: center;
+}
+.search1{
+    float: left;
+    background-color: none;
+    height: 100px;
+    width: 55%;
+}
+.search2{
+    float: right;
+    background-color: none;
+    height: 100px;
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search2 img {
+    width: 12px;
+    position: absolute;
+    padding-left: 10px;
+}
+.search2 input{
+    border-width: 2px;
+    border-radius: 58px;
+    padding-left: 25px;
+    height: 30px;
+    width: 180px;
+}
+
+.content{
+    width: auto;
+    height: 800px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 10px;
+}
+
+.log_in{
+    text-decoration: none; /* Remove underline */
+    color: rgb(62, 171, 208); /* Change color to light blue */
+}
+
+.also-sign-in {
+    margin-top: 10px;
+}
+
+.also-sign-in p {
+    font-size: large;
+    margin-bottom: 10px;
+    margin-left: 85px;
+}
+
+.button4,
+.button5 {
+    display: inline-block;
+    width: 400px; 
+    height: 40px; 
+    margin-right: 10px; 
+}
+
+.instructions button,
+.button4 button,
+.button5 button {
+    border: none;
+}
+
+
+.login-box {
+    position: relative;
+    top: 0;
+    float: center;
+    margin: 60px auto;
+    width: 19%;
+    height: 10px;
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.login label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px ;
+    font-weight: bolder;
+}
+
+.username{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 10px;
+}
+
+.username label {
+    align-self: flex-start;
+    margin-bottom: 5px;
+    font-size: small;
+}
+
+.username input{
+    width: 100%;
+    height: 35px;
+    padding-left: 20px;
+    font-size: large;
+}
+
+.username input:hover{
+    width: 100%;
+    height: 35px;
+    transition-duration: 0.5s;
+}
+
+.Email{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 30px;
+}
+
+.Email label {
+    align-self: flex-start;
+    margin-bottom: 5px;
+    font-size: small;
+}
+
+.Email input{
+    width: 100%;
+    height: 35px;
+    padding-left: 20px;
+    font-size: large;
+}
+
+.Email input:hover{
+    width: 100%;
+    height: 35px;
+    transition-duration: 0.5s;
+}
+
+.Contact_Number{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 30px;
+}
+
+.Contact_Number label {
+    align-self: flex-start;
+    margin-bottom: 5px;
+    font-size: small;
+}
+
+.Contact_Number input{
+    width: 100%;
+    height: 35px;
+    padding-left: 20px;
+    font-size: large;
+}
+
+.Contact_Number input:hover{
+    width: 100%;
+    height: 35px;
+    transition-duration: 0.5s;
+}
+
+.Password{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 30px;
+}
+
+.Password label {
+    align-self: flex-start;
+    margin-bottom: 5px;
+    font-size: small;
+}
+
+.Password input{
+    width: 100%;
+    height: 35px;
+    padding-left: 20px;
+    font-size: large;
+}
+.Password input:hover{
+    width: 100%;
+    height: 35px;
+    transition-duration: 0.5s;
+}
+
+.Confirm_Password{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 30px;
+}
+
+.Confirm_Password label {
+    align-self: flex-start;
+    margin-bottom: 5px;
+    font-size: small;
+}
+
+.Confirm_Password input{
+    width: 100%;
+    height: 35px;
+    padding-left: 20px;
+    font-size: large;
+}
+
+.Confirm_Password input:hover{
+    width: 100%;
+    height: 35px;
+    transition-duration: 0.5s;
+}
+
+.Checkbox{
+    justify-content: left;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 80px;
+    width: fit-content;
+    float: left;
+}
+
+.forget{
+    justify-content: left;
+    display: flex;
+    margin-top: 30px;
+    margin-right: 80px;
+    width: fit-content;
+    float: right;
+    color: rgb(31, 28, 199);
+}
+
+.forget a{
+    text-decoration: none;
+}
+
+.button3{
+    margin-top: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.button3 button{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    background-color: black;
+    color: aliceblue;
+    width: 65%;
+    height: 40px;
+    margin: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button3 button:hover{
+    background-color: rgba(0, 0, 0, 0.842);
+    transition-duration: 0.3s;
+}
+
+.label3{
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+label3 label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px ;
+    font-weight: bolder;
+}
+
+label3 a{
+    text-decoration: none;
+    color: rgb(36, 121, 233);
+}
+
+.button4{
+    margin-top: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.button4 button{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    background-color: rgb(182, 53, 53);
+    color: aliceblue;
+    width: 65%;
+    height: 40px;
+    margin: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button4 button:hover{
+    background-color: rgba(182, 53, 53, 0.89);
+    transition-duration: 0.3s;
+}
+
+.button5{
+    margin-top: 20px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.button5 button{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    background-color: rgb(34, 86, 182);
+    color: aliceblue;
+    width: 65%;
+    height: 40px;
+    margin: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button5 button:hover{
+    background-color: rgba(34, 86, 182, 0.897);
+    transition-duration: 0.3s;
+}
+
+.instructions {
+    width: 40%;
+    height: 800px;
+    background-color: none;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.instructions label {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+
+.instructions button {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    background-color: green;
+    color: aliceblue;
+    width: 35%;
+    height: 40px;
+    margin: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.instructions button:hover {
+    background-color: rgb(0, 176, 0);
+    transition-duration: 0.5s;
+}
+
+.nav-links1 {
+	list-style-type: none;
+    display: flex;
+    gap: 150px;
+}
+ .footer-nav {
+     display: flex;
+     justify-content: space-around;
+     background-color: none;
+     align-items: center;
+ }
+ .footer-nav img {
+    margin-left: -100px;
+}
+
+ .footer {
+     padding: 20px;
+     background-color: #030303;
+     min-height: 100px;
+     max-height: 300px;
+ }
+
+ .row {
+     display: flex;
+     background-color: none;
+ }
+
+ .justify-between {
+     justify-content: space-between;
+ }
+
+ .text-white {
+    padding-left: 10px;
+     color: white;
+     text-align: justify;
+ }
+
+ .text-center {
+     text-align: center;
+ }
+
+ .m-t-200 {
+     margin-top: 20px;
+ }
+
+ .gap-10 {
+     gap: 50px;
+     margin-top: 20px;
+     margin-right: 640px;
+ }
+
+ .text-small {
+     font-size: small;
+     padding-bottom: 20px;
+ }
+
+ .sign-up-btn {
+    background-color: green;
+    font-size: large;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 200px;
+    margin-top: 20px;
+    height: 40px;
+    cursor: pointer;
+ }
+
+ .hidden {
+    display: none;
+}
+
+.error {
+    color: red;
+    margin: 0px;
+}

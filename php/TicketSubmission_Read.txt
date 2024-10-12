@@ -1,0 +1,25 @@
+<?php
+
+// Database connection
+$conn = new mysqli('localhost', 'root', '', 'ticketsubmission');
+if ($conn->connect_error) {
+    echo "$conn->connect_error";
+    die("Connection Failed : " . $conn->connect_error);
+} else {
+    // Read
+    $sql = "SELECT * FROM Ticket";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        // Output data of each row
+        while ($row = $result->fetch_assoc()) {
+            echo "ID: " . $row["id"] . " - Name: " . $row["FullName"] . " - Subject: " . $row["subject"] . "<br>";
+        }
+    } else {
+        echo "0 results";
+    }
+
+    $conn->close();
+}
+
+?>

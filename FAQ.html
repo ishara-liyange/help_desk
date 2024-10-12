@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ Page</title>
+<link rel="stylesheet" href="./styles/FAQ.css">
+<link rel="stylesheet" href="./styles/main.css">
+<link rel="icon" type="image/png" href="/img/logo.png">
+</head>
+<body>
+
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img width="60" src="/img/logo.png" alt="">
+                <h3>Help Desk Pro</h3>
+            </div>
+            <div class="profile">
+                <img width="20" src="./img/icons/bell.png" alt="">
+                <h4>Jone Doe</h4>
+                <img width="35" src="./img/icons/user.png" alt="">
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li class = "li"><a class="nav-item" href="index.html">Home</a></li>
+                <li class = "li"><a class="nav-item" href="Dashboard.html">Dashboard</a></li>
+                <li class = "li"><a class="nav-item" href="">Ticket Submission</a></li>
+                <li class = "li"><a class="nav-item" href="">User Profile</a></li>
+                <li class = "li"><a class="nav-item" href="Contact_us.html">Contact Us</a></li>
+                <li class = "li"><a class="nav-item" href="About.html">About Us</a></li>
+            </ul>   
+
+	    <div class="search-box">
+                <img class="search-icon" width="15" src="./img/icons/search.png" alt="">
+                <input class="search" type="text" placeholder="How can we help you today?">
+            </div> 
+			
+        </nav>
+    </header>
+    <div class="accordion">
+    <div class="contentBx">
+        <div class="lable">List One</div>
+        <div class="content">
+            <p>Lorem Ipsum, sometimes referred to as 'lipsum', is the placeholder text used in design when creating content. It helps designers plan out where the content will sit, without needing to wait for the content to be written and approved. It originally comes from a
+                Latin text, but to today's reader, it's seen as gibberish.</p>
+        </div>
+    </div>
+    <div class="contentBx">
+        <div class="lable">List One</div>
+        <div class="content">
+            <p>Lorem Ipsum, sometimes referred to as 'lipsum', is the placeholder text used in design when creating content. It helps designers plan out where the content will sit, without needing to wait for the content to be written and approved. It originally comes from a
+                Latin text, but to today's reader, it's seen as gibberish.</p>
+        </div>
+    </div>
+    <div class="contentBx">
+        <div class="lable">List One</div>
+        <div class="content">
+            <p>Lorem Ipsum, sometimes referred to as 'lipsum', is the placeholder text used in design when creating content. It helps designers plan out where the content will sit, without needing to wait for the content to be written and approved. It originally comes from a
+                Latin text, but to today's reader, it's seen as gibberish.</p>
+        </div>
+    </div>
+    <div class="contentBx">
+        <div class="lable">List Two</div>
+        <div class="content">
+            <p>Lorem Ipsum, sometimes referred to as 'lipsum', is the placeholder text used in design when creating content. It helps designers plan out where the content will sit, without needing to wait for the content to be written and approved. It originally comes from a
+                Latin text, but to today's reader, it's seen as gibberish.</p>
+        </div>
+    </div>
+    <div class="contentBx">
+        <div class="lable">List Three</div>
+        <div class="content">
+            <p>Lorem Ipsum, sometimes referred to as 'lipsum', is the placeholder text used in design when creating content. It helps designers plan out where the content will sit, without needing to wait for the content to be written and approved. It originally comes from a
+                Latin text, but to today's reader, it's seen as gibberish.</p>
+        </div>
+    </div>
+    <div class="contentBx">
+        <div class="lable">List Four</div>
+        <div class="content">
+            <p>Lorem Ipsum, sometimes referred to as 'lipsum', is the placeholder text used in design when creating content. It helps designers plan out where the content will sit, without needing to wait for the content to be written and approved. It originally comes from a
+                Latin text, but to today's reader, it's seen as gibberish.</p>
+        </div>
+    </div>
+    <div class="contentBx">
+        <div class="lable">List Five</div>
+        <div class="content">
+            <p>Lorem Ipsum, sometimes referred to as 'lipsum', is the placeholder text used in design when creating content. It helps designers plan out where the content will sit, without needing to wait for the content to be written and approved. It originally comes from a
+                Latin text, but to today's reader, it's seen as gibberish.</p>
+        </div>
+    </div>
+    <div class="contentBx">
+        <div class="lable">List Six</div>
+        <div class="content">
+            <p>Lorem Ipsum, sometimes referred to as 'lipsum', is the placeholder text used in design when creating content. It helps designers plan out where the content will sit, without needing to wait for the content to be written and approved. It originally comes from a
+                Latin text, but to today's reader, it's seen as gibberish.</p>
+        </div>
+    </div>
+</div>
+<script>
+    const accordion=document.getElementsByClassName
+    ('contentBx');
+
+    for(i=0; i<accordion.length; i++){
+        accordion[i].addEventListener('click',function(){
+            this.classList.toggle('active')
+        })
+    }
+</script>
+
+<footer class="footer">
+    <div class="footer-nav">
+        <img width="80" src="./img/logo.png" alt="">
+        <ul class="nav-links1">
+            <li><a class="nav-item text-white" href="Contact_us.html"><u>Contact Us</u></a></li>
+            <li><a class="nav-item text-white" href="FAQ.html"><u>FAQs</u></a></li>
+            <li><a class="nav-item text-white" href=""><u>Privacy and Terms of services</u></a></li>
+            <li><a class="nav-item text-white" href="About.html"><u>About Us</u></a></li>
+            <li><a class="nav-item text-white" href="Knowledgebase.html"><u>Knowledge base</u></a></li>
+        </ul>
+    </div>
+    <div class="row justify-between">
+        <div style="width: 350px;">
+            <p class="text-white text-small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At provident
+                laudantium enim ipsam, unde dolorum ab adipisci error aperiam numquam voluptatibus in, minus, quam
+                nesciunt modi. Doloribus repellendus ullam odit.</p>
+        </div>
+        <div>
+            <div class="row gap-10">
+                <img width="25" height="25" src="./img/icons/twitter.png" alt="">
+                <img width="25" height="25" src="./img/icons/facebook.png" alt="">
+                <img width="25" height="25" src="./img/icons/whatsapp.png" alt="">
+                <img width="25" height="25" src="./img/icons/instagram.png" alt="">
+                <img width="25" height="25" src="./img/icons/youtube.png" alt="">
+            </div>
+            <button class="feedback-btn">Provide feedback for us</button>
+        </div>
+    </div>
+    <p class="text-white text-small text-center m-t-200">Powered by DeskPro Copyright © 2024-2035 SLIIT. All rights reserved.</p> 
+</footer>
+
+</body>
+</html>

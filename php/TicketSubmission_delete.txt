@@ -1,0 +1,25 @@
+<?php
+
+// Database connection
+$conn = new mysqli('localhost', 'root', '', 'ticketsubmission');
+if ($conn->connect_error) {
+    echo "$conn->connect_error";
+    die("Connection Failed : " . $conn->connect_error);
+} else {
+    // Delete
+    $id = $_POST['id']; // Assuming you have an ID field for identifying records to delete
+
+    $stmt = $conn->prepare("DELETE FROM Ticket WHERE id=?");
+    $stmt->bind_param("i", $id);
+    $execval = $stmt->execute();
+    if ($execval) {
+        echo "Record deleted successfully";
+    } else {
+        echo "Error deleting record: " . $conn->error;
+    }
+
+    $stmt->close();
+    $conn->close();
+}
+
+?>

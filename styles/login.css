@@ -1,0 +1,377 @@
+body {
+    background-image: url("D:/SLIIT/Y1S2/IWT/Assignment try 01/img/backgroundimagehome.jpg.png");
+    margin: 0px;
+}
+
+header{
+    width: auto;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.815);
+}
+.logo {
+    /*background-color: rgb(151, 168, 72);*/
+    height: 100px;
+    width: 30%;
+    float: left;
+    display: flex;
+    justify-content: inherit;
+    align-items: center;
+}
+#logo1{
+    float: left;
+    width: 90px;
+}
+#PLARD{
+   font-size: x-large;
+   font-weight: 1000;
+   font-family: Arial, Helvetica, sans-serif;
+}
+#button1 {
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+    background: none;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+#button1:hover {
+    color: white;
+    background: rgb(41, 80, 209);
+}
+.nav{
+    float: left;    
+    height: 100px;
+    width: 40%;
+    /*background-color: aquamarine;*/
+}
+.nav ul{
+    max-height: 100%;
+    padding: 11px;
+    list-style-type: none;
+    display: flex;
+	margin: 0;
+	overflow: hidden;
+	/*background-color: #333;*/
+    justify-content: space-between;
+    align-items: center;
+}
+.nav ul li{
+    display: flex;
+}
+
+.nav ul li a{
+    display: flex;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.nav ul li a:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 40px;
+    transition: 1s;
+    font-size: 120%;
+}
+.search{
+    float: left;
+    background-color: none;
+    height: 100px;
+    width: 30%;
+    position: relative;
+    align-items: center;
+}
+.search1{
+    float: left;
+    background-color: none;
+    height: 100px;
+    width: 55%;
+}
+.search2{
+    float: right;
+    background-color: none;
+    height: 100px;
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search2 img {
+    width: 12px;
+    position: absolute;
+    padding-left: 10px;
+}
+.search2 input{
+    border-width: 2px;
+    border-radius: 58px;
+    padding-left: 25px;
+    height: 30px;
+    width: 180px;
+}
+
+.content{
+    width: auto;
+    height: 800px;
+    background-color: rgb(122, 122, 118);
+    margin: 10px;
+    padding: 10px;
+}
+
+.login-box{
+    width: 59%;
+    height: 800px;
+    background-color: none;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.login{
+    width: 65%;
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 10px rgb(68, 66, 66);
+    border-radius: 10px;
+    padding: 15px;
+}
+.login label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px ;
+    font-weight: bolder;
+}
+.username{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 50px;
+}
+.username input{
+    width: 70%;
+    height: 45px;
+    border-radius: 30px;
+    padding-left: 20px;
+    font-size: large;
+}
+.username input:hover{
+    width: 72%;
+    height: 48px;
+    border-radius: 40px;
+    transition-duration: 0.5s;
+}
+.Password{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 30px;
+}
+.Password input{
+    width: 70%;
+    height: 45px;
+    border-radius: 30px;
+    padding-left: 20px;
+    font-size: large;
+}
+.Password input:hover{
+    width: 72%;
+    height: 48px;
+    border-radius: 40px;
+    transition-duration: 0.5s;
+}
+.Checkbox{
+    justify-content: left;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 80px;
+    width: fit-content;
+    float: left;
+}
+.forget{
+    justify-content: left;
+    display: flex;
+    margin-top: 30px;
+    margin-right: 80px;
+    width: fit-content;
+    float: right;
+    color: rgb(31, 28, 199);
+}
+.forget a{
+    text-decoration: none;
+}
+.button3{
+    margin-top: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.button3 button{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    background-color: black;
+    color: aliceblue;
+    width: 65%;
+    height: 40px;
+    margin: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.button3 button:hover{
+    background-color: rgba(0, 0, 0, 0.842);
+    transition-duration: 0.3s;
+}
+.label3{
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+label3 label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px ;
+    font-weight: bolder;
+}
+label3 a{
+    text-decoration: none;
+    color: rgb(36, 121, 233);
+}
+.button4{
+    margin-top: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.button4 button{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    background-color: rgb(182, 53, 53);
+    color: aliceblue;
+    width: 65%;
+    height: 40px;
+    margin: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.button4 button:hover{
+    background-color: rgba(182, 53, 53, 0.89);
+    transition-duration: 0.3s;
+}
+.button5{
+    margin-top: 20px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.button5 button{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    background-color: rgb(34, 86, 182);
+    color: aliceblue;
+    width: 65%;
+    height: 40px;
+    margin: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.button5 button:hover{
+    background-color: rgba(34, 86, 182, 0.897);
+    transition-duration: 0.3s;
+}
+
+.instructions{
+    width: 40%;
+    height: 800px;
+    background-color: none;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.instructions label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+.instructions button{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    background-color: black;
+    color: aliceblue;
+    width: 26%;
+    height: 40px;
+    margin: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.instructions button:hover{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    background-color: rgb(202, 199, 199);
+    color: rgb(0, 0, 0);
+    width: 26%;
+    transition-duration: 0.5s;
+}
+.nav-links1 {
+	list-style-type: none;
+    display: flex;
+    gap: 150px;
+}
+ .footer-nav {
+     display: flex;
+     justify-content: space-around;
+     background-color: none;
+     align-items: center;
+ }
+ .footer-nav img {
+    margin-left: -100px;
+}
+
+ .footer {
+     padding: 20px;
+     background-color: #030303;
+     min-height: 100px;
+     max-height: 300px;
+ }
+
+ .row {
+     display: flex;
+     background-color: none;
+ }
+
+ .justify-between {
+     justify-content: space-between;
+ }
+
+ .text-white {
+    padding-left: 10px;
+     color: white;
+     text-align: justify;
+ }
+
+ .text-center {
+     text-align: center;
+ }
+
+ .m-t-200 {
+     margin-top: 20px;
+ }
+
+ .gap-10 {
+     gap: 50px;
+     margin-top: 20px;
+     margin-right: 640px;
+ }
+
+ .text-small {
+     font-size: small;
+     padding-bottom: 20px;
+ }

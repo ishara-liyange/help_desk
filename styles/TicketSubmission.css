@@ -1,0 +1,382 @@
+ 
+ 
+ /*Ticket submission page header and footer style css part*/
+ body {
+     margin: 0px;
+ }
+
+ header {
+     margin: 10px;
+ }
+
+ .logo {
+     display: flex;
+ }
+
+ .header {
+     display: flex;
+     justify-items: center;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ .profile {
+     display: flex;
+     gap: 10px;
+     justify-items: center;
+     align-items: center;
+ }
+
+ nav {
+     display: flex;
+     justify-items: center;
+     align-items: center;
+     gap: 10px;
+ }
+
+ .search-box {
+     position: relative;
+	 background-position: center; 
+ }
+
+
+ .search-icon {
+     top: 5px;
+     left: 8px;
+     position: absolute;
+ }
+
+ .search {
+     border-width: 1px;
+     border-radius: 48px;
+     height: 20px;
+     padding-left: 25px;
+     width: 180px;
+ }
+
+ a {
+     color: black;
+     text-decoration: none;
+ }
+
+ .nav-item:hover {
+    background-color: rgb(190, 190, 185);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.4s;
+ }
+
+ 
+ .nav-item {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+	 
+ }
+
+ .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+	
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	width : 88%;
+ }
+ 
+ .nav-links1 {
+	list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+ .footer-nav {
+     display: flex;
+     justify-content: space-between;
+
+ }
+
+ .footer {
+     padding: 20px;
+     background-color: #030303;
+     min-height: 100px;
+ }
+
+ .row {
+     display: flex;
+ }
+
+ .justify-between {
+     justify-content: space-between;
+ }
+
+ .text-white {
+     color: white
+ }
+
+ .text-center {
+     text-align: center;
+ }
+
+ .m-t-200 {
+     margin-top: 100px;
+ }
+
+ .gap-10 {
+     gap: 10px
+ }
+
+ .text-small {
+     font-size: small;
+ }
+
+ .feedback-btn {
+     margin-top: 20px;
+     border-color: orange;
+     background: none;
+     cursor: pointer;
+     color: orange;
+     height: 25px;
+ }
+
+ .feedback-btn:hover {
+     color: white;
+     background: orange;
+ }
+ 
+.li {
+  float: left;
+}
+
+/*Ticket submission page section part style css part*/
+
+section{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/Ticket Submition  page images/UniBackground.png");
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: 100% 100%;
+   
+}
+
+.container {
+    height: 83%;
+    max-width: 800px;
+    width: 100%;
+    background: #fff;
+    padding: 30px 30px;
+    border-radius: 5px;
+
+}
+
+.container .title {
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+}
+
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: (135deg, #71b7e6, #9b59b6);
+}
+
+.container form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+
+}
+
+form .user-details .input-box {
+    margin-bottom: 5px;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details {
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box .details-message {
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box2 {
+    margin-bottom: 5px;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box2 textarea {
+   height: 100px;
+   margin-bottom: -96px;;
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border:1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+ }
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #9b59b6;
+}
+
+.user-details .input-box2 textarea:focus,
+.user-details .input-box2 textarea:valid{
+    border-color: #9b59b6;
+}
+
+form-input[type=radio] {
+    display: none
+}
+
+form .button{
+    height: 35px;
+    margin: 0px -31px;
+    left: 20px;
+    margin-top: -9px;
+}
+
+form .button input {
+    align-items: left;
+    height: 100%;
+    width: 862px;
+    outline: none;
+    color: white;
+    border: 2px solid #555555;
+    font-size: 18px;
+    font-weight: 500px;
+    border-radius: 5px;
+    border-spacing: 1px;
+    background:   #555555; 
+}
+
+form .button input:hover {
+    background-color:#e7e7e7;
+    color: black;
+   /* background: linear-gradient(red, green);*/
+}
+
+@media (max-width: 584) {
+    .container{
+        max-width: 15px;
+    }
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .gender-details .category {
+        width: 100%;
+    }
+    .container form .user-details {
+        max-height: 300px;
+        over-flow-y: scroll;
+    }
+    .user-details::-webkit-scrollbar {
+        width: 0;
+    }
+} 
+
+/*changes*/
+.container .sub-topic{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+  .container .select-container {
+    margin-bottom: 4px;
+    margin-top: 11px;
+    width: calc(100% / 2 - 20px);
+    
+  }
+
+  .container .select-container .select-box {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border:1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    background-color: rgba(223, 223, 223, 0.844);
+  }
+
+  .user-details .select-container .details-withbox {
+    margin-top: 10px;
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+
+.input-box1 .details-file{
+    margin-top: 40px;
+    margin-bottom: -1100px;
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+
+.input-box1 input{
+    display: inline-block;
+   text-transform: uppercase;
+   color:black;
+   background: rgba(223, 223, 223, 0.844);
+   text-align: right;
+   height: 45px;
+   width: 100%;
+   outline: none;
+   border-radius: 5px;
+   border:1px solid black;
+   padding-left: 15px;
+   font-size: 16px;
+   border-bottom-width: 2px;
+   transition: all 0.3s ease;
+   display: felx;
+
+}
+
+.user-details .radio-button {
+    margin-bottom: -100px;
+}
+
+.user-details .check-box {
+    margin-top: 10px;
+    margin-bottom: -30px;
+    width: calc(100% / 2 - 20px);
+}
+
+
+
+  
+ 

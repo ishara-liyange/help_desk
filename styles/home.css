@@ -1,0 +1,286 @@
+body {
+    background-image: url("D:/SLIIT/Y1S2/IWT/Assignment try 01/img/backgroundimagehome.jpg.png");
+    margin: 0px;
+}
+
+header{
+    width: auto;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.815);
+}
+.logo {
+    /*background-color: rgb(151, 168, 72);*/
+    height: 100px;
+    width: 30%;
+    float: left;
+    display: flex;
+    justify-content: inherit;
+    align-items: center;
+}
+#logo1{
+    float: left;
+    width: 90px;
+}
+#PLARD{
+   font-size: x-large;
+   font-weight: 1000;
+   font-family: Arial, Helvetica, sans-serif;
+}
+#button1 {
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+    background: none;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+#button1:hover {
+    color: white;
+    background: rgb(41, 80, 209);
+}
+.nav{
+    float: left;    
+    height: 100px;
+    width: 40%;
+    /*background-color: aquamarine;*/
+}
+.nav ul{
+    max-height: 100%;
+    padding: 11px;
+    list-style-type: none;
+    display: flex;
+	margin: 0;
+	overflow: hidden;
+	/*background-color: #333;*/
+    justify-content: space-between;
+    align-items: center;
+}
+.nav ul li{
+    display: flex;
+}
+
+.nav ul li a{
+    display: flex;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.nav ul li a:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 40px;
+    transition: 1s;
+    font-size: 120%;
+}
+.search{
+    float: left;
+    background-color: none;
+    height: 100px;
+    width: 30%;
+    position: relative;
+    align-items: center;
+}
+.search1{
+    float: left;
+    background-color: none;
+    height: 100px;
+    width: 55%;
+}
+.search2{
+    float: right;
+    background-color: none;
+    height: 100px;
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search2 img {
+    width: 12px;
+    position: absolute;
+    padding-left: 10px;
+}
+.search2 input{
+    border-width: 2px;
+    border-radius: 58px;
+    padding-left: 25px;
+    height: 30px;
+    width: 180px;
+}
+.slider{
+    width: auto;
+    height: 520px;
+   background-color: none;
+}
+.container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 30px;
+    height: 400px;
+    background-color: blue;
+    margin: 10px;
+    cursor: pointer;
+    transition: width 0.5s ease-in, height 0.8s ease-in;
+    border-radius: 45px;
+    background-size: cover;
+    background-position: center;
+}
+.box:hover{
+    width: 40px;
+    height: 420px;
+    transition: 0.3s;
+}
+.hidden:checked+ .box{
+    width: 1000px;
+    height: 500px;
+}
+.hidden{
+    display: none;
+}
+.b1{
+    background-image: url("D:/SLIIT/Y1S2/IWT/Assignment try 01/img/img_mountains_wide.jpg");
+}
+.b2{
+    background-image: url("D:/SLIIT/Y1S2/IWT/Assignment try 01/img/img_nature_wide.png");
+}
+.b3{
+    background-image: url("D:/SLIIT/Y1S2/IWT/Assignment try 01/img/img_snow_wide.jpg");
+}
+.b4{
+    background-image: url("D:/SLIIT/Y1S2/IWT/Assignment try 01/img/img_mountains_wide.jpg");
+}
+.b5{
+    background-image: url("D:/SLIIT/Y1S2/IWT/Assignment try 01/img/img_nature_wide.png");
+}
+.section{
+    width: auto;
+    height: 900px;
+    background-color: none;
+    padding: 6px;
+}
+.section1{
+    width: 49.5%;
+    height: 49%;
+    background-color: none;
+    padding: 2px;
+    float: left;
+    display: flex;
+}
+.section2{
+    width: 49.5%;
+    height: 49%;
+    background-color: none;
+    padding: 2px;
+    float: right;
+    display: flex;
+}
+.section3{
+    width: 49.5%;
+    height: 49%;
+    background-color: none;
+    padding: 2px;
+    float: left;
+    display: flex;
+}
+.section4{
+    width: 49.5%;
+    height: 49%;
+    background-color: none;
+    padding: 2px;
+    float: right;
+    display: flex;
+}
+.section label{
+    margin: 10px;
+    font-weight: 1000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    text-decoration: underline;
+    float: left;
+    position: absolute;
+}
+.section p{
+    margin: 10px;
+    align-self: center;
+    text-align: justify;
+    width: 50%;   
+    
+}
+.section img{
+    margin: 25px;
+    width: 45%;
+    border-radius: 10%;
+}
+.section img:hover{
+    margin: 20px;
+    transition-duration: 1s;
+    width: 46%;
+    border-radius: 5%;
+    cursor: grab;
+}
+.nav-links1 {
+	list-style-type: none;
+    display: flex;
+    gap: 150px;
+}
+ .footer-nav {
+     display: flex;
+     justify-content: space-around;
+     background-color: none;
+     align-items: center;
+ }
+ .footer-nav img {
+    margin-left: -100px;
+}
+
+ .footer {
+     padding: 20px;
+     background-color: #030303;
+     min-height: 100px;
+     max-height: 300px;
+ }
+
+ .row {
+     display: flex;
+     background-color: none;
+ }
+
+ .justify-between {
+     justify-content: space-between;
+ }
+
+ .text-white {
+    padding-left: 10px;
+     color: white
+ }
+
+ .text-center {
+     text-align: center;
+ }
+
+ .m-t-200 {
+     margin-top: 20px;
+ }
+
+ .gap-10 {
+     gap: 50px;
+     margin-top: 20px;
+     margin-right: 640px;
+ }
+
+ .text-small {
+     font-size: small;
+     padding-bottom: 20px;
+ }

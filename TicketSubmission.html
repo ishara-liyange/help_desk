@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/TicketSubmission.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Help Desk Pro</title>
+</head>
+
+<body>
+    
+    <script src="js/TicketSubmission.js"></script>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img width="60" src="./img/logo.png" alt="">
+                <h3>Help Desk Pro</h3>
+            </div>
+            <div class="profile">
+                <img width="20" src="./img/icons/bell.png" alt="">
+                <h4>Jone Doe</h4>
+                <img width="35" src="./img/icons/user.png" alt="">
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li class = "li"><a class="nav-item" href="">Home</a></li>
+                <li class = "li"><a class="nav-item" href="">Dashboard</a></li>
+                <li class = "li"><a class="nav-item" href="">Ticket Submission</a></li>
+                <li class = "li"><a class="nav-item" href="">User Profile</a></li>
+                <li class = "li"><a class="nav-item" href="">Contact Us</a></li>
+                <li class = "li"><a class="nav-item" href="">About Us</a></li>
+            </ul>   
+
+	    <div class="search-box">
+                <img class="search-icon" width="15" src="./img/icons/search.png" alt="">
+                <input class="search" type="text" placeholder="How can we help you today?">
+            </div> 
+			
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="title">Ticket Submission Form </div><br>
+            <div id ="id-sub-topic" class="Sub-topic">Please fill out this form, and one of our representatives will promptly respond to you via email</div><br>
+                <form id="form" action = "/help_desk/php/TicketSubmission.php" method="post">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span id="id-fullName" class="details">Full Name *</span>   
+                            <input  id="id-fullName-input" name="FullName" type="text" placeholder="Enter your Full Name"  required>
+                        </div>
+                        <div class="input-box">
+                            <span id="id-subject" class="details">Subject *</span>
+                            <input id="id-subject-input" type="text" name="title" placeholder="Enter your inquiry subject" required>
+                        </div>
+                        <div class="input-box"><br>
+                            <span id="id-registration" class="details">Registration Number *</span>
+                            <input id = "id-registration-input" type="text" name="RegistrationNo" placeholder="Enter your Registration Number" required>
+                        </div>
+                        <div class="select-container">
+                                <span id="id-select-box" class="details-withbox">Select the most suitable option</span>
+                                <select name = "inquiry" id = "id-select-box2" class="select-box"><br><br>
+                                    <option value = "0">Select an inquiry type</option>
+                                    <option value = "1">I have a question about registration</option>
+                                    <option value = "2">I have a question about Examinations</option>
+                                    <option value = "3">Request an official document</option>
+                                    <option value = "4">other</option>
+                              </select>
+                            </div>
+                        <div class="input-box"><br>
+                            <span id="id-phoneNumber" class="details">Contact Number *</span>
+                            <input id="id-phoneNumber-input" name="ContactNo" type="text" placeholder="Enter your phone number" required>
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-box2"><br>
+                            <span id="id-textarea" class="details-message" id="id-message">Issues/message *</span>
+                            <textarea  id="id-textarea-input" rows="3" cols="51" name="message" placeholder="Describe your issue here" required></textarea>
+                            <div class="error"></div>
+                        </div>
+                        <div class="radio-button"><br>
+                            <span id ="id-radio" class="details">Faculty/School *</span><br>
+                            <input type="radio" id="id1-radio" name="Faculty" value="0">
+                            <label for="html">Faculty Of Computing</label><br>
+                            <input type="radio" id="id2-radio" name="Faculty" value="1">
+                            <label for="css">Faculty Of Engineering</label><br>
+                            <input type="radio" id="id3-radio" name="Faculty" value="2">
+                            <label for="javascript">Faculty Of Humanities & Sciences</label><br>
+                            <input type="radio" id="id4-radio" name="Faculty" value="3">
+                            <label for="html">Faculty Of Business</label><br>
+                            <input type="radio" id="id5-radio" name="Faculty" value="4">
+                            <label for="html">Other</label>
+                        </div>
+                        <div class="input-box1"><br>
+                            <label class = "details-file" for="myfile">Select files</label>
+                            <input type="file" id="myfile" name="myfile" multiple><br><br>
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-box"><br>
+                            <span id="id-email" class="details">Email *</span>
+                            <input id="id-email-input" name="email"  type="text" placeholder="Enter your Email"  required>
+                            <div class="error"></div>
+                        </div>     
+                        <div class="check-box">
+                            <input type="checkbox" id="id-checkbox-input" name="Privacy" value="Bike" required>
+                            <span  id="id-checkbox" class="details-checkbox">Accept privacy policy and term *</span>
+                            <div class="error"></div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <input type="submit" onclick="myFunction()" value="Submit" >
+                    </div>
+                 </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <footer class="footer">
+        <div class="footer-nav">
+            <img width="80" src="./img/logo.png" alt="">
+            <ul class="nav-links1">
+                <li><a class="nav-item text-white" href=""><u>Contact Us</u></a></li>
+                <li><a class="nav-item text-white" href=""><u>FAQs</u></a></li>
+                <li><a class="nav-item text-white" href=""><u>Privacy and Terms of services</u></a></li>
+                <li><a class="nav-item text-white" href=""><u>About Us</u></a></li>
+                <li><a class="nav-item text-white" href=""><u>Knowledge base</u></a></li>
+            </ul>
+        </div>
+        <div class="row justify-between">
+            <div style="width: 350px;">
+                <p class="text-white text-small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At provident
+                    laudantium enim ipsam, unde dolorum ab adipisci error aperiam numquam voluptatibus in, minus, quam
+                    nesciunt modi. Doloribus repellendus ullam odit.</p>
+            </div>
+            <div>
+                <div class="row gap-10">
+                    <img width="25" height="25" src="./img/icons/twitter.png" alt="">
+                    <img width="25" height="25" src="./img/icons/facebook.png" alt="">
+                    <img width="25" height="25" src="./img/icons/whatsapp.png" alt="">
+                    <img width="25" height="25" src="./img/icons/instagram.png" alt="">
+                    <img width="25" height="25" src="./img/icons/youtube.png" alt="">
+                </div>
+                <button class="feedback-btn">Provide feedback for us</button>
+            </div>
+        </div>
+        <p class="text-white text-small text-center m-t-200">Powered by DeskPro Copyright © 2024-2035 SLIIT. All rights reserved.</p> 
+    </footer>
+    
+</body>
+
+</html>

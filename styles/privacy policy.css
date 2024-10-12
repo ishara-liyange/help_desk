@@ -1,0 +1,51 @@
+.main{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.main h2{
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 25px;
+    content: "";
+    width: 100%;
+    height: 4px;
+}
+
+.main h4{
+    font-size: 25px;
+    color: #000;
+    margin-bottom: 25px;
+    content: "";
+    width: 100%;
+    height: 4px;
+    text-align: left;
+}
+
+.policytext {
+    text-align: left;
+  }
+
+ 
+.Privacy-policy-left{
+    float: left;
+    display: inline;
+    width: 20%;
+    padding-top: 5%;
+    padding-left: 5%;
+    line-height: 300%;
+    background-color: rgb(122, 124, 125);
+}
+.Privacy-policy-right{
+    display: inline;
+    float: right;
+    width: 80%;
+}
+.all-body{
+    display: flex;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./styles/contact_us.css">
+    <link rel="icon" type="image/png" href="/img/logo.png">
+    <link rel="stylesheet" href="./styles/main.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img width="60" src="./img/logo.png" alt="">
+                <h3>Help Desk Pro</h3>
+            </div>
+            <div class="profile">
+                <img width="20" src="./img/icons/bell.png" alt="">
+                <h4>Jone Doe</h4>
+                <img width="35" src="./img/icons/user.png" alt="">
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li class="li"><a class="nav-item" href="index.html">Home</a></li>
+                <li class="li"><a class="nav-item" href="Dashboard.html">Dashboard</a></li>
+                <li class="li"><a class="nav-item" href="">Ticket Submission</a></li>
+                <li class="li"><a class="nav-item" href="">User Profile</a></li>
+                <li class="li"><a class="nav-item" href="Contact_us.html">Contact Us</a></li>
+                <li class="li"><a class="nav-item" href="About.html">About Us</a></li>
+            </ul>
+
+            <div class="search-box">
+                <img class="search-icon" width="15" src="./img/icons/search.png" alt="">
+                <input class="search" type="text" placeholder="How can we help you today?">
+            </div>
+
+        </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <h3>Send A message</h3>
+                    <form name="contactForm" method="POST" action="/help_desk/php/contact.php"
+                        onsubmit="return validateContactForm();">
+                        <div class="form-group">
+                            <input type="temt" name="username" placeholder="Your Name">
+                        </div>
+                        <p id="userError" class="error hidden">Name is required.</p>
+                        <div class="form-group">
+                            <input type="temt" name="email" placeholder="Your Email">
+                        </div>
+                        <p id="emailError" class="error hidden">Email is required.</p>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your message"></textarea>
+                        </div>
+                        <p id="messageError" class="error hidden">Message is required.</p>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i ></i>+256 4526 526</p>
+                    <p><i ></i>info@example.com</p>
+                    <p><i ></i>123 street,colombo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-nav">
+            <img width="80" src="./img/logo.png" alt="">
+            <ul class="nav-links1">
+                <li><a class="nav-item text-white" href="/help_desk/Contact_us.html"><u>Contact Us</u></a></li>
+                <li><a class="nav-item text-white" href="/help_desk/FAQ.html"><u>FAQs</u></a></li>
+                <li><a class="nav-item text-white" href="/help_desk/Privacy policy.html"><u>Privacy and Terms of
+                            services</u></a></li>
+                <li><a class="nav-item text-white" href="/help_desk/About_us.html"><u>About Us</u></a></li>
+                <li><a class="nav-item text-white" href="/help_desk/Knowledgebase.html"><u>Knowledge base</u></a></li>
+            </ul>
+        </div>
+        <div class="row justify-between">
+            <div style="width: 350px;">
+                <p class="text-white text-small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At provident
+                    laudantium enim ipsam, unde dolorum ab adipisci error aperiam numquam voluptatibus in, minus, quam
+                    nesciunt modi. Doloribus repellendus ullam odit.</p>
+            </div>
+            <div>
+                <div class="row gap-10">
+                    <img width="25" height="25" src="./img/icons/twitter.png" alt="">
+                    <img width="25" height="25" src="./img/icons/facebook.png" alt="">
+                    <img width="25" height="25" src="./img/icons/whatsapp.png" alt="">
+                    <img width="25" height="25" src="./img/icons/instagram.png" alt="">
+                    <img width="25" height="25" src="./img/icons/youtube.png" alt="">
+                </div>
+                <button class="feedback-btn">Provide feedback for us</button>
+            </div>
+        </div>
+        <p class="text-white text-small text-center m-t-200">Powered by DeskPro Copyright © 2024-2035 SLIIT. All rights
+            reserved.</p>
+    </footer>
+    <script src="./js/contact-us.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<?php
+
+// Database connection
+$conn = new mysqli('localhost', 'root', '', 'ticketsubmission');
+if ($conn->connect_error) {
+    echo "$conn->connect_error";
+    die("Connection Failed : " . $conn->connect_error);
+} else {
+    // Update
+    $fullName = $_POST['FullName'];
+    $subject = $_POST['subject'];
+    $RegistrationNo = $_POST['RegistrationNo'];
+    $ContactNo = $_POST['ContactNo'];
+    $message = $_POST['message'];
+    $Faculty = $_POST['Faculty'];
+    $myfile = $_POST['myfile'];
+    $email = $_POST['email'];
+
+    // Assuming you have an ID field for identifying records to update
+    $id = $_POST['id'];
+
+    $stmt = $conn->prepare("UPDATE Ticket SET FullName=?, RegistrationNo=?, ContactNo=?, Faculty=?, email=?, subject=?, message=?, myfile=? WHERE id=?");
+    $stmt->bind_param("sisissssi", $fullName, $RegistrationNo, $ContactNo, $Faculty, $email, $subject, $message, $myfile, $id);
+    $execval = $stmt->execute();
+    if ($execval) {
+        echo "Record updated successfully";
+    } else {
+        echo "Error updating record: " . $conn->error;
+    }
+
+    $stmt->close();
+    $conn->close();
+}
+
+?>
